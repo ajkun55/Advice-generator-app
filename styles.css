@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root{
+    --clr-Light-Cyan: hsl(193, 38%, 86%);
+    --clr-Neon-Green: hsl(150, 100%, 66%);
+    --clr-Grayish-Blue: hsl(217, 19%, 38%);
+    --clr-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --clr-Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    background-color: var(--clr-Dark-Blue);
+    color: var(--clr-Light-Cyan);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--clr-Dark-Grayish-Blue);
+    width: min(540px, 90%);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.card p:first-of-type{
+    font-size: 0.5em;
+    color: var(--clr-Neon-Green);
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#advice-content{
+    margin: 1.7rem auto;
+    width: 93%;
+}
+
+picture{
+    display: block;
+    width: 100%;
+}
+
+picture img{
+    margin-block: 0.5rem 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    border-radius: 50%;
+    background-color: var(--clr-Neon-Green);
+    aspect-ratio: 1;
+    min-width: 3.5rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    border: none;    
+}
+
+button:hover, button:focus{
+    box-shadow:  0 0 25px 1px var(--clr-Neon-Green);
+}
